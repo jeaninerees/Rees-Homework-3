@@ -1,3 +1,12 @@
+/*
+  Hi Jeanine!  I added feedback to your code in CSS comments like this one.
+
+  Again, great job with the styling on this homework.  The page looks great - just like the design file.  Fantastic
+  use of floats and clears in the main section of the page.
+
+  More comments inline below!
+*/
+
 * {
      -moz-box-sizing: border-box; /* Firexfox */
      -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
@@ -41,6 +50,16 @@ header {
   margin: 35px 50px 20px auto;
 }
 
+/*
+  Link selectors should also have styles for their hover state; for example:
+    
+    .header a:hover {
+      color: pink;
+    }
+
+  (Color choice is just an example.)  This CSS block above will set the color of the link to pink, but only
+  when a user hovers over that link with their mouse.
+*/
 .header a {
   color: #f9e42e;
   font-weight: 600;
@@ -49,6 +68,7 @@ header {
 }
 
 main {
+  /* Probably a typo, but don't forget to end each CSS rule with a semi-colon. */
   background-color: #f0efef
 }
 
@@ -124,6 +144,7 @@ margin-bottom: 75px;
 }
 
 #learnMore {
+  /* Make sure all of your font sizes have units - either px, em, or rem. */
   font-size: 22;
   font-weight: 600;
   margin: 10px auto 50px auto;

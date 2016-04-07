@@ -1,3 +1,12 @@
+<!--
+	Hi Jeanine!  I added feedback about your code in HTML comments like this one.
+
+	Overall, great job!  Your page looks really good and your code is very well organized and indented - super
+	easy to read.  Also, fantastic use of the header, footer, nav, and main semantic HTML 5 tags.  
+
+	More comments inline below!
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -20,6 +29,16 @@
 			<h1>Relaxr</h1>
 
 			<nav>
+				<!-- 
+					The href attribute is a required attribute for <a> tags - otherwise your links have
+					nowhere to go!  If you are stuck for what value to give the href attribute, you can always
+					use "#":
+
+						<a href="#">About</a>
+
+					That is a standard value that, if you click on the link, will just reload the 
+					current page.
+				-->
 				<a>About</a>
 				<a>FAQ</a>
 				<a>Team</a>
@@ -33,24 +52,37 @@
 		<main>
 			<div class="mainText">
 
+				<!-- Great use of the <h1> tags in here! -->
 				<h1>How I Implemented Relaxr in Two Weeks and Changed My Life</h1>
 
 					<img class="article1Photo" src="images/blog_photo1.jpg" alt="Rowing team">
 
 					<p class="mainP"><span class="dropCap">L</span><span>orem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices enim nec nisl dignissim dapibus. Sed venenatis id sem non condimentum. Sed tincidunt eget nunc in molestie. Nam tempus id ligula a rhoncus. Nam condimentum rutrum nulla ac viverra. Pellentesque pulvinar ex vel urna pulvinar, et blandit risus scelerisque. Maecenas sit amet ante vestibulum, placerat arcu quis, pretium justo. Aenean vel lacus urna.</span></p>
 
+					<!--
+						These "read more" lines should really be links (i.e. in <a> tags), since users
+						will want to click on them to "read more".
+					-->
 					<p class="readMore">Read More ></p>
 
 				<h1 class="articleTitle">I Traveled Across the Globe Thanks to Relaxr's Excel Automation</h1>
 
 					<img class="article2Photo" src="images/blog_photo2.jpg" alt="Canoes">
 
+					<!-- 
+						Nice solution for the special style of that first letter!  
+						There is another way of handling that - a little more advanced and it uses 
+						pseudo-selectors.  Check out https://css-tricks.com/snippets/css/drop-caps/.
+					-->
 					<p class="mainP"><span class="dropCap">M</span><span>aecenas tristique at risus ac mattis. Cras et ornare massa. Nullam porttitor dui id mi pellentesque aliquet. Donec ut felis nec eros vulputate interdum. Proin eget faucibus est. Curabitur in egestas sem. Nulla quis libero tempor, interdum ante vitae, rutrum eros. Sed sed semper velit, a congue nisi. Phasellus fermentum porttitor iaculis. Vivamus at ligula id magna malesuada gravida. Cras rutrum pulvinar tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec pharetra vel nunc ut elementum. Quisque dignissim metus molestie sem elementum sagittis. Mauris vitae sem in libero facilisis vulputate. Sed ligula justo, euismod nec quam sed, ultrices suscipit elit.</span></p>
 
 					<p class="readMore">Read More ></p>
 			</div>
 								
-
+			<!--
+				The <div> tag is totally find here, but it is a bit more semantic to use the <aside>
+				tag for sidebars like this one.
+			-->
 			<div class="sideBar">
 				
 				<h1>Categories</h1>
@@ -75,6 +107,7 @@
 
 			<div class="signUp">
 
+				<!-- This button should really also be a link, since users will click on it.-->
 				<p class="buttonBlue"> Sign Up Now!</p>
 
 			</div> 	
